@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="0" id="one">
+    <select id="th">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" placeholder="0" id="two">
+    <button onclick="cal()">Calculate</button>
+    <input type="number" id="screen">
+</body>
+</html>
+<script>
+    function cal() {
+        var ope1=document.getElementById('one').value;
+        var ope2=document.getElementById('two').value;
+        var ope3=document.getElementById('th').value;
+        var ope4=document.getElementById('screen').value;
+        if(ope3=="+")
+        {
+            var screen=parseInt(ope1)+parseInt(ope2)
+            document.getElementById('screen').value=screen;
+        }
+        
+    }
+
+
+</script>

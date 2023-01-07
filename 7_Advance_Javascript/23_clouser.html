@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clouser</title>
+</head>
+<body>
+    <script>
+        function outer()
+        {
+            var count=0;
+            function inner()
+            {
+                return count+=1;
+            }
+            return inner;
+            
+        }
+        var put=outer()
+        console.log(put())
+    </script>
+</body>
+</html>

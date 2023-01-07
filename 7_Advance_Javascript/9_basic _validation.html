@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic_validation</title>
+</head>
+<body>
+    <form onsubmit="validdata()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>password:</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function validdata()
+        {
+            var a=document.getElementById('name').value;
+        var b=document.getElementById('pwd').value;
+        // use in if...else
+        if(a=="")
+        {
+            alert('please enter name');
+            return false;
+        }
+        else
+        {
+            if(b=="")
+        {
+            alert('please enter pwd');
+            return false;
+        }
+        }
+        }
+
+        // use in if
+        // if(a=="")
+        // {
+        //     alert('please enter name');
+        //     return false;
+        // }
+        // if(b=="")
+        // {
+        //     alert('please enter pwd');
+        //     return false;
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getdata</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <input type="text" id="two">
+    <button onclick="addition()">click me</button>
+    <input type="text" id="three">
+    <h1 id="op"></h1>
+    <script>
+        // document.getElementById()
+        // document.getElementsByClassName()
+        // document.getElementsByName()
+        // document.getElementsByTagName()
+        // document.querySelector()
+        // document.querySelectorAll()
+        function addition()
+        {
+            var a=document.getElementById('one').value;
+            console.log(a);
+            var b=document.getElementById('two').value;
+            console.log(b);
+            var three=document.getElementById('three')
+            var x=parseInt(a)+parseInt(b);
+            console.log(x);
+            console.log(a+b);
+            // document.getElementById('three').value=x;
+            // document.getElementById('op').innerHTML=x;
+        }
+        // addition()
+    </script>
+</body>
+</html>

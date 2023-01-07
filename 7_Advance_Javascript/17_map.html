@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <script>
+        let x = new Map([
+            ['bmw',230000],
+            ['cooper',450000],
+            ['audi',780000]
+    ]);
+        console.log(x);
+        console.log(x.get('cooper'));
+        
+
+        // let letters=new Set(["x","y","z","f"]);
+        // console.log(letters);
+        // console.log(letters.size);
+
+
+        // x.forEach((index,value)=>{
+        //     console.log(index +'=>'+ value)
+        // })
+
+        // object:-
+        var obj = {name:'rike',10:'this is print'}
+        obj.city='bumbai'
+        console.log(obj);
+        console.log(obj.name);
+        // console.log(obj.10);
+        // 10 lidha to answer malvo joi parantu error male che aeta mate map ne lavavo padyo js ma
+
+        // map:-
+        var data = new Map([
+            ['name','john'],
+            [10,'id']
+        ])
+        data.set('city','noida')
+        console.log(data);
+        console.log(data.get('name'));
+        console.log(data.get(10));
+        console.log(data.keys());
+        console.log(data.values());
+
+        arr=['kio','jio','hji']
+        var result=arr.map((item)=>{
+           console.log(item);
+           return item
+        })
+        console.log(result);
+        
+        // var pto=arr.forEach(element => {
+        //     console.log(element);
+        //     return element
+        // });
+        // console.log(pto);
+    </script>
+    <h3> definition: map ae new advance feature che je object na </h3>
+    <h4>major different aetalo j che ke object ni ander aek key string j hoy che,jyare map ni under aek key number,boolean,string koi bi hoy sake</h4>
+    <br>
+    <br>
+    <h1>Map</h1>
+    <h2>map ae return kare che arry.</h2>
+    <h2>foreach ae return kartu nathi array.</h2>
+</body>
+</html>

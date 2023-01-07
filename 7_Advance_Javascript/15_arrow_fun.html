@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow</title>
+</head>
+<body>
+    <script>
+        // basic
+        function add(x,y)
+        {
+            console.log(x+y);
+        }
+        add(4,5)
+
+
+        // second way
+        let sum = function(a,b)
+        {
+            return a+b;
+            
+        }
+        console.log(sum(5,5));
+        
+
+        // with arrow
+        let h=(e,r)=>{
+            return e+r; 
+        }
+        console.log(h(4,8));
+       
+            
+
+
+        // without braces.
+        let g=(e,f)=>e+f
+        console.log(g(5,9))
+
+        // arrow function ae function jevu j che different aetalo j che ke function lakhata ae nikari jay ane arrow aavi jay short strick che function ni.
+    
+    </script>
+</body>
+</html>

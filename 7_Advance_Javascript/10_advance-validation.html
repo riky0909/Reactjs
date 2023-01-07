@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance-validation</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" id="name" onblur="cli(this,'nameerror')"></td>
+            <td><span id="nameerror"></span></td>
+        </tr>
+        <tr>
+            <td>email:</td>
+            <td><input type="email" name="email" id="" onblur="cli(this,'emailerror')"></td>
+            <td><span id="emailerror"></span></td>
+        </tr>
+        <tr>
+            <td>phone:</td>
+            <td><input type="number" name="phone num" onblur="cli(this,'numbererror')"></td>
+            <td><span id="numbererror"></span></td>
+        </tr>
+        <tr>
+            <td>password:</td>
+            <td><input type="password" name="pwd" onblur="cli(this,'passworderror')"></td>
+            <td><span id="passworderror"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="submit" ></td>
+        </tr>
+    </table>
+    <script>
+        function cli(e,spnid)
+        {
+            if(e.value=="")
+            {
+                document.getElementById(spnid).style.color="red";
+                document.getElementById(spnid).innerHTML="enter data";
+                
+            }
+            else
+            {
+                document.getElementById(spnid).innerHTML="";  
+            }
+        }
+    </script>
+</body>
+</html>

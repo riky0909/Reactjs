@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype-inheritance</title>
+</head>
+<body>
+    
+        <script>
+    function person(firstname,lastname)
+    {
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    // prsn=new person("tops","tech")
+    // console.log(prsn);
+    // prototype add karva mate
+    person.prototype.getfullname=function(){
+        // console.log(this.firstname,this.lastname);
+        // undefined ni lakhelu aave che karan ke prsn nathi lidhu aetala mate.
+        // console.log(prsn.firstname,prsn.lastname);
+        return this.firstname,this.lastname
+    }
+    function student(firstname,lastname,grade,schoolname)
+    {
+        person.call(this,firstname,lastname)
+        this.grade=grade;
+        this.schoolname=schoolname;
+    }
+    // student.prototype=new person
+    // student.constructor.prototype=new student;
+    std=new student("john","deo","a","spce")
+    console.log(std);
+    // person.prototype.getfullname();
+
+   </script> 
+    
+</body>
+</html>
